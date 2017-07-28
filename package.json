@@ -1,0 +1,23 @@
+{
+  "name": "dingtalk-schedule-reminder",
+  "version": "1.0.0",
+  "description": "DingtalkScheduleReminder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netbeen/DingtalkScheduleReminder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netbeen/DingtalkScheduleReminder/issues"
+  },
+  "homepage": "https://github.com/netbeen/DingtalkScheduleReminder#readme",
+  "dependencies": {
+    "node-schedule": "^1.2.3",
+    "request": "^2.81.0"
+  }
+}
