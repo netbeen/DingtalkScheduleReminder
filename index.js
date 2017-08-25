@@ -40,15 +40,15 @@ const sendReminder = (message, ifAt = true, ifAtAll = false) => {
  */
 
 sendReminder('我进入工作状态啦！',false);
-schedule.scheduleJob('0 10 * * 1-5', function(){
-  sendReminder('晨会30分钟准备\n- 统计内网+RDC的昨日BUG、本月BUG\n- 浏览各个项目的进度\n- 昨日验收会BUG跟进\n- 对外Vone修改指派人\n 更新前一天版本，修改状态，设置新版本');
-});
-schedule.scheduleJob('25 10 * * 1-5', function(){
-  sendReminder('晨会5分钟准备\n- 打开云雀晨会纪要+Aone项目域看板视图\n- 大电视就位');
-});
-schedule.scheduleJob('29 10 * * 1-5', function(){
-  sendReminder('晨会即将开始\n- 在群里通知大家参会\n- 结束后发布晨会纪要，并更新');
-});
+// schedule.scheduleJob('0 10 * * 1-5', function(){
+//   sendReminder('晨会30分钟准备\n- 统计内网+RDC的昨日BUG、本月BUG\n- 浏览各个项目的进度\n- 昨日验收会BUG跟进\n- 对外Vone修改指派人\n 更新前一天版本，修改状态，设置新版本');
+// });
+// schedule.scheduleJob('25 10 * * 1-5', function(){
+//   sendReminder('晨会5分钟准备\n- 打开云雀晨会纪要+Aone项目域看板视图\n- 大电视就位');
+// });
+// schedule.scheduleJob('29 10 * * 1-5', function(){
+//   sendReminder('晨会即将开始\n- 在群里通知大家参会\n- 结束后发布晨会纪要，并更新');
+// });
 schedule.scheduleJob('0 13 * * 5', function(){
   sendReminder('项目域周会4小时准备\n- 统计本周线上BUG情况');
 });
