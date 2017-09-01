@@ -22,7 +22,7 @@ const sendReminder = (message, ifAt = true, ifAtAll = false) => {
     })
   }, function(error, response, body) {
     console.log(body);
-    if (!error && response.statusCode == 200) {
+    if (!error && response.statusCode === 200) {
     }
   });
 }
@@ -53,7 +53,7 @@ schedule.scheduleJob('0 13 * * 5', function(){
   sendReminder('项目域周会4小时准备\n- 统计本周线上BUG情况');
 });
 schedule.scheduleJob('30 16 * * 1-5', function(){
-  sendReminder('验收会30分钟准备\n- 在群里提醒大家进入预发环境');
+  sendReminder('验收会30分钟准备\n- 在群里提醒变更进预发');
 });
 schedule.scheduleJob('59 16 * * 1-5', function(){
   sendReminder('验收会即将开始\n- 在群里通知相关人员参会\n- 结束后发布验收结果');
