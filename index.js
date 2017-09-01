@@ -39,7 +39,7 @@ const sendReminder = (message, ifAt = true, ifAtAll = false) => {
  └───────────────────────── second (0 - 59, OPTIONAL)
  */
 
-sendReminder('我进入工作状态啦！',false);
+sendReminder('重启完成，我进入工作状态啦！',false);
 // schedule.scheduleJob('0 10 * * 1-5', function(){
 //   sendReminder('晨会30分钟准备\n- 统计内网+RDC的昨日BUG、本月BUG\n- 浏览各个项目的进度\n- 昨日验收会BUG跟进\n- 对外Vone修改指派人\n 更新前一天版本，修改状态，设置新版本');
 // });
@@ -53,7 +53,7 @@ schedule.scheduleJob('0 13 * * 5', function(){
   sendReminder('项目域周会4小时准备\n- 统计本周线上BUG情况');
 });
 schedule.scheduleJob('30 16 * * 1-5', function(){
-  sendReminder('验收会30分钟准备\n- 在群里提醒变更进预发');
+  sendReminder('验收会30分钟准备\n- 在群里提醒大家提前把变更拉进预发环境');
 });
 schedule.scheduleJob('59 16 * * 1-5', function(){
   sendReminder('验收会即将开始\n- 在群里通知相关人员参会\n- 结束后发布验收结果');
