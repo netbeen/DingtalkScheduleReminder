@@ -39,7 +39,7 @@ const sendReminder = (message, ifAt = true, ifAtAll = false) => {
  └───────────────────────── second (0 - 59, OPTIONAL)
  */
 
-sendReminder('重启完成，我进入工作状态啦！',false);
+// sendReminder('重启完成，我进入工作状态啦！',false);
 // schedule.scheduleJob('0 10 * * 1-5', function(){
 //   sendReminder('晨会30分钟准备\n- 统计内网+RDC的昨日BUG、本月BUG\n- 浏览各个项目的进度\n- 昨日验收会BUG跟进\n- 对外Vone修改指派人\n 更新前一天版本，修改状态，设置新版本');
 // });
